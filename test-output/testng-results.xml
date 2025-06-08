@@ -1,71 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-27T04:35:05Z" name="Default suite" finished-at="2025-04-27T04:35:09Z" duration-ms="4776">
+  <suite started-at="2025-06-08T15:08:29Z" name="Default suite" finished-at="2025-06-08T15:08:45Z" duration-ms="16307">
     <groups>
     </groups>
-    <test started-at="2025-04-27T04:35:05Z" name="Default test" finished-at="2025-04-27T04:35:09Z" duration-ms="4776">
+    <test started-at="2025-06-08T15:08:29Z" name="Default test" finished-at="2025-06-08T15:08:45Z" duration-ms="16307">
       <class name="swaglab_test.LoginTest">
-        <test-method is-config="true" signature="SetUpExcel()[pri:0, instance:swaglab_test.LoginTest@1603cd68]" started-at="2025-04-27T04:35:05Z" name="SetUpExcel" finished-at="2025-04-27T04:35:05Z" duration-ms="694" status="PASS">
+        <test-method is-config="true" signature="SetUpExcel()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:29Z" name="SetUpExcel" finished-at="2025-06-08T15:08:29Z" duration-ms="618" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpExcel -->
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:swaglab_test.LoginTest@1603cd68]" started-at="2025-04-27T04:35:05Z" name="SetUp" finished-at="2025-04-27T04:35:09Z" duration-ms="3268" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:29Z" name="SetUp" finished-at="2025-06-08T15:08:34Z" duration-ms="4892" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="LoginSuccessTest()[pri:-1, instance:swaglab_test.LoginTest@1603cd68]" started-at="2025-04-27T04:35:09Z" name="LoginSuccessTest" finished-at="2025-04-27T04:35:09Z" duration-ms="456" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Product] but found [Products]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Product] but found [Products]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at swaglab_test.LoginTest.LoginSuccessTest(LoginTest.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="LoginSuccessTest()[pri:-1, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:34Z" name="LoginSuccessTest" finished-at="2025-06-08T15:08:35Z" duration-ms="539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginSuccessTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:swaglab_test.LoginTest@1603cd68]" started-at="2025-04-27T04:35:09Z" name="TearDown" finished-at="2025-04-27T04:35:09Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:35Z" name="TearDown" finished-at="2025-06-08T15:08:35Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="CloseExcel()[pri:0, instance:swaglab_test.LoginTest@1603cd68]" started-at="2025-04-27T04:35:09Z" name="CloseExcel" finished-at="2025-04-27T04:35:09Z" duration-ms="159" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:35Z" name="SetUp" finished-at="2025-06-08T15:08:37Z" duration-ms="2150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="LockedUserLoginFailureTest()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:37Z" name="LockedUserLoginFailureTest" finished-at="2025-06-08T15:08:37Z" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LockedUserLoginFailureTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:37Z" name="TearDown" finished-at="2025-06-08T15:08:37Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:37Z" name="SetUp" finished-at="2025-06-08T15:08:39Z" duration-ms="1935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="LoginFailureTestFromExcel()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:39Z" name="LoginFailureTestFromExcel" finished-at="2025-06-08T15:08:40Z" duration-ms="424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFailureTestFromExcel -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:40Z" name="TearDown" finished-at="2025-06-08T15:08:40Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:40Z" name="SetUp" finished-at="2025-06-08T15:08:42Z" duration-ms="1995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="LoginFailureTestFromProperties()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:42Z" name="LoginFailureTestFromProperties" finished-at="2025-06-08T15:08:42Z" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFailureTestFromProperties -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:42Z" name="TearDown" finished-at="2025-06-08T15:08:42Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:42Z" name="SetUp" finished-at="2025-06-08T15:08:44Z" duration-ms="2135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="LoginFailureTest()[pri:1, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:44Z" name="LoginFailureTest" finished-at="2025-06-08T15:08:45Z" duration-ms="530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFailureTest -->
+        <test-method is-config="true" signature="CloseExcel()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:45Z" name="CloseExcel" finished-at="2025-06-08T15:08:45Z" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseExcel -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:swaglab_test.LoginTest@3b96c42e]" started-at="2025-06-08T15:08:45Z" name="TearDown" finished-at="2025-06-08T15:08:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
       </class> <!-- swaglab_test.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -8,6 +8,7 @@
           <include name="SetUp"/>
           <include name="CloseExcel"/>
           <include name="TearDown"/>
+          <include name="LockedUserLoginFailureTest"/>
           <include name="LoginSuccessTest"/>
           <include name="SetUpExcel"/>
         </methods>

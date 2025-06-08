@@ -27,7 +27,7 @@ public class LoginTest extends BaseClass{
 		lp.LoginFunction("standard_user", "secret_sauce");
 		
 		WebElement productTitle = driver.findElement(By.className("title"));
-		Assert.assertEquals(productTitle.getText(), "Product");
+		Assert.assertEquals(productTitle.getText(), "Products");
 		
 		
 
@@ -52,7 +52,7 @@ public class LoginTest extends BaseClass{
 		
 		
 		LoginPage lp =new LoginPage();
-		lp.LoginFunction("UserNameVal", "PasswordVal");
+		lp.LoginFunction("locked_out_user", "secret_sauce");
 		
 		WebElement ErrorMsg = driver.findElement(By.xpath("//h3[@data-test='error']"));
 		Assert.assertEquals(ErrorMsg.getText(), "Epic sadface: Sorry, this user has been locked out.");
