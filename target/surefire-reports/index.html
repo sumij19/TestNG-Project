@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="swaglab_test.LoginTest" class="method navigator-link" hash-for-method="LockedUserLoginFailureTest">LockedUserLoginFailureTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="swaglab_test.LoginTest" class="method navigator-link" hash-for-method="LoginSuccessTest">LoginSuccessTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,6 +100,11 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swaglab_test.LoginTest" class="method navigator-link" hash-for-method="LockedUserLoginFailureTest">LockedUserLoginFailureTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="swaglab_test.LoginTest" class="method navigator-link" hash-for-method="LoginFailureTest">LoginFailureTest</a> <!-- method navigator-link -->
@@ -132,6 +118,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="swaglab_test.LoginTest" class="method navigator-link" hash-for-method="LoginFailureTestFromProperties">LoginFailureTestFromProperties</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swaglab_test.LoginTest" class="method navigator-link" hash-for-method="LoginSuccessTest">LoginSuccessTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -151,9 +142,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
+          <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
+              <span class="class-name">swaglab_test.ProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCartTest">
+                  </a> <!-- addToCartTest -->
+                  <span class="method-name">addToCartTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">swaglab_test.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -162,31 +168,8 @@
                   <a name="LockedUserLoginFailureTest">
                   </a> <!-- LockedUserLoginFailureTest -->
                   <span class="method-name">LockedUserLoginFailureTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Epic sadface: Sorry, this user has been locked out.] but found [Epic sadface: Username and password do not match any user in this service]
-	at swaglab_test.LoginTest.LockedUserLoginFailureTest(LoginTest.java:58)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginSuccessTest">
-                  </a> <!-- LoginSuccessTest -->
-                  <span class="method-name">LoginSuccessTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Product] but found [Products]
-	at swaglab_test.LoginTest.LoginSuccessTest(LoginTest.java:30)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">swaglab_test.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="LoginFailureTest">
@@ -208,19 +191,11 @@
                   <span class="method-name">LoginFailureTestFromProperties</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">swaglab_test.ProductTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addToCartTest">
-                  </a> <!-- addToCartTest -->
-                  <span class="method-name">addToCartTest</span>
+                  <a name="LoginSuccessTest">
+                  </a> <!-- LoginSuccessTest -->
+                  <span class="method-name">LoginSuccessTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -281,27 +256,27 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addToCartTest')
 data.setCell(0, 2, 'swaglab_test.ProductTest')
-data.setCell(0, 3, 1108);
+data.setCell(0, 3, 840);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoginFailureTest')
+data.setCell(1, 1, 'LoginSuccessTest')
 data.setCell(1, 2, 'swaglab_test.LoginTest')
-data.setCell(1, 3, 584);
+data.setCell(1, 3, 560);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'LoginSuccessTest')
+data.setCell(2, 1, 'LoginFailureTestFromExcel')
 data.setCell(2, 2, 'swaglab_test.LoginTest')
-data.setCell(2, 3, 524);
+data.setCell(2, 3, 543);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'LockedUserLoginFailureTest')
+data.setCell(3, 1, 'LoginFailureTest')
 data.setCell(3, 2, 'swaglab_test.LoginTest')
-data.setCell(3, 3, 493);
+data.setCell(3, 3, 505);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'LoginFailureTestFromExcel')
+data.setCell(4, 1, 'LockedUserLoginFailureTest')
 data.setCell(4, 2, 'swaglab_test.LoginTest')
-data.setCell(4, 3, 471);
+data.setCell(4, 3, 468);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'LoginFailureTestFromProperties')
 data.setCell(5, 2, 'swaglab_test.LoginTest')
-data.setCell(5, 3, 456);
+data.setCell(5, 3, 412);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
@@ -348,89 +323,85 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">630 ms</span>
+                <span class="method-start">574 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">LoginSuccessTest</span>
-                <span class="method-start">4423 ms</span>
+                <span class="method-start">7117 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">5192 ms</span>
+                <span class="method-start">7679 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">5198 ms</span>
+                <span class="method-start">7882 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">LockedUserLoginFailureTest</span>
-                <span class="method-start">7924 ms</span>
+                <span class="method-start">9615 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">8550 ms</span>
+                <span class="method-start">10083 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">8551 ms</span>
+                <span class="method-start">10283 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginFailureTestFromExcel</span>
-                <span class="method-start">11228 ms</span>
+                <span class="method-start">12195 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">11701 ms</span>
+                <span class="method-start">12738 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">11702 ms</span>
+                <span class="method-start">12952 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginFailureTestFromProperties</span>
-                <span class="method-start">15048 ms</span>
+                <span class="method-start">14722 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">15505 ms</span>
+                <span class="method-start">15135 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">swaglab_test.ProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">15506 ms</span>
+                <span class="method-start">15371 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addToCartTest</span>
-                <span class="method-start">18946 ms</span>
+                <span class="method-start">17316 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">20055 ms</span>
+                <span class="method-start">18157 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">swaglab_test.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">20055 ms</span>
+                <span class="method-start">18393 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginFailureTest</span>
-                <span class="method-start">23359 ms</span>
+                <span class="method-start">19927 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">23944 ms</span>
+                <span class="method-start">20432 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">CloseExcel</span>
-                <span class="method-start">23944 ms</span>
+                <span class="method-start">20621 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

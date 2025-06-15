@@ -3,14 +3,26 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="swaglab_test.LoginTest">
+      <class name="swaglab_test.ProductTest">
         <methods>
           <include name="SetUp"/>
+          <include name="CloseExcel"/>
+          <include name="addToCartTest"/>
+          <include name="TearDown"/>
+          <include name="SetUpExcel"/>
+        </methods>
+      </class> <!-- swaglab_test.ProductTest -->
+      <class name="swaglab_test.LoginTest">
+        <methods>
+          <include name="LoginFailureTestFromProperties"/>
+          <include name="SetUp"/>
+          <include name="LoginFailureTestFromExcel"/>
           <include name="CloseExcel"/>
           <include name="TearDown"/>
           <include name="LockedUserLoginFailureTest"/>
           <include name="LoginSuccessTest"/>
           <include name="SetUpExcel"/>
+          <include name="LoginFailureTest"/>
         </methods>
       </class> <!-- swaglab_test.LoginTest -->
     </classes>
